@@ -23,6 +23,9 @@ main .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
 }
+
+/*banner*/
+
 main .banner {
   overflow:hidden;
  
@@ -31,6 +34,7 @@ main #slider_container {
   width: 300vw;
   transition: transform 0.5s;
 }
+
 main #slider_container li.slider {
   width: 100vw;
   float: left;
@@ -39,6 +43,9 @@ main .slider img {
   width: 100%;
   object-fit: contain;
 }
+
+
+
 
 
 

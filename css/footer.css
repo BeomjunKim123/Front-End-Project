@@ -76,3 +76,8 @@ footer #footer_fix li img {
     width: 90%;
     height: 90%;
 }
+
+a {
+    text-decoration: none;
+    color: #9B9B9B;
+}
