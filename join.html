@@ -9,6 +9,7 @@
     <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="css/join.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -24,11 +25,11 @@
             <div id="header_left">
                 <div id="logo"><a href="index.html"><img src="main_img/logo.jpg"></a></div>
                 <ul id="menu">
-                    <li><a href="/new.html">NEW</a></li>
+                    <li><a href="new.html">NEW</a></li>
                     <li><a href="#">WOMEN</a></li>
                     <li><a href="#">MEN</a></li>
                     <li><a href="#">HOME/LIVING</a></li>
-                    <li><a href="#">BEST ITEM</a></li>
+                    <li><a href="ranking.html">BEST ITEM</a></li>
                     <li><a href="#">BRAND</a></li>
                 </ul>
             </div>
@@ -51,10 +52,58 @@
                     <b>아이디</b>
                     <span class="placehold-text"><input type="text"></span>
                 </div>
-            </div>
-            
-           
+                <div class="field">
+                    <b>비밀번호</b>
+                    <input class="userpw" type="password">
+                </div>
+                <div class="field">
+                    <b>비밀번호 재확인</b>
+                    <input class="userpw-confirm" type="password">
+                </div>
+                <div class="field">
+                    <b>이름</b>
+                    <input type="text">
+                </div>
 
+                <div class="field birth">
+                    <b>생년월일</b>
+                    <div>
+                        <input type="number" placeholder="년(4자)">
+                        <select>
+                            <option value="">월</option>
+                            <option value="">1월</option>
+                            <option value="">2월</option>
+                            <option value="">3월</option>
+                            <option value="">4월</option>
+                            <option value="">5월</option>
+                            <option value="">6월</option>
+                            <option value="">7월</option>
+                            <option value="">8월</option>
+                            <option value="">9월</option>
+                            <option value="">10월</option>
+                            <option value="">11월</option>
+                            <option value="">12월</option>
+                        </select>
+                        <input type="number" placeholder="일">
+                    </div>
+                </div>
+
+                <div class="field tel-number">
+                    <b>휴대전화</b>
+                    <select>
+                        <option value="">대한민국 +82</option>
+                    </select>
+                    <div>
+                        <input type="tel" placeholder="전화번호 입력">
+                        <input type="button" value="인증번호 받기">
+                    </div>
+                    <input type="number" placeholder="인증번호를 입력하세요">
+                </div>
+        
+                
+                <input type="submit" value="가입하기">
+
+            </div>
         </main>
 
     

@@ -1,0 +1,41 @@
+main ul.section_name {
+ 
+    margin: 100px 0 50px ;
+    text-align: center;
+  }
+  main ul.section_name li {
+    margin: 10px;
+  }
+  main ul.section_name .title {
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+main #panorama_items {
+    width: 100%;
+    text-align: center;
+}
+
+  main #panorama_items .item_box {
+    width: 23%;
+    display: inline-block;
+    border-bottom: solid 3px #ccc;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+}
+
+  main #panorama_items .item_box a {
+    text-decoration: none;
+    color: #444;
+}
+
+  main #panorama_items .item_box img {
+    width: 340px;
+    height: 340px;
+}
+
+  main #panorama_items .item_box li {
+    font-weight: bold;
+    font-size: 13px;
+}

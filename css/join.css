@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box; 
+    outline: none;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14px;
+    background-color: white;
+    line-height: 1.5em;
+    color : #222;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+
+.join{
+    width: 400px;
+    margin: auto; 
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.join .logo3{
+    display: block;
+    margin :50px auto;
+}
+
+.join  .field{
+    margin :5px 0; 
+}
+
+.join  b{
+    display: block; 
+    margin-bottom: 5px;
+}
+
+/*input 중 radio 는 width 가 100%면 안되니까 */
+.join  input:not(input[type=radio]),.join  select{
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.join  input[type=button],
+.join  input[type=submit]{
+background-color: #1BBC9B;
+color:#fff
+}
+
+.join  input:focus, .join  select:focus{
+    border: 1px solid #1BBC9B;
+}
+
+.field.birth div{ /*field 이면서 birth*/
+    display: flex;
+    gap:10px; 
+}
+
+
+.field.tel-number div {
+    display: flex;
+}
+
+.field.tel-number div input:nth-child(1){
+    flex:2;
+}
+
+.field.tel-number div input:nth-child(2){
+    flex:1;
+}
+
+.field.gender div{
+    border: 1px solid #dadada;
+    padding: 15px 5px;
+    background-color: #fff;
+}
+
+.placehold-text{
+    display: block; /*span 으로 감싸서 크기영역을 블록요소로 만들어ㅜ저야한다*/
+    position:relative;
+    /* border: 1px solid #000; */
+}
+
+.placehold-text:before{ 
+   
+    position:absolute; /*before은 inline 요소이기 때문에 span으로 감싸줌 */
+    right : 20px;
+    top:13px;
+    pointer-events: none; /*자체가 가지고 있는 pointer event 를 없애준다 */
+}
+
+.userpw{
+    background:url(./images/images2/icon-01.png) no-repeat center right 15px;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.userpw-confirm{
+    background:url(./images/images2/icon-02.png) no-repeat center right 15px;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+
+@media (max-width:768px) {
+    .join {
+        width: 100%;
+    }
+}
